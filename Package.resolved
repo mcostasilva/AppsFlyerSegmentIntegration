@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Segment",
+        "repositoryURL": "https://github.com/segmentio/analytics-ios",
+        "state": {
+          "branch": null,
+          "revision": "187faa897c826fe0954124da116db3318242f7c3",
+          "version": "4.1.4"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
