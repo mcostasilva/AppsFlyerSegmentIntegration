@@ -22,7 +22,12 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "AppsFlyerSegmentIntegration",
-			dependencies: ["Segment", "AppsFlyerLib"]),
+			dependencies: ["Segment", "AppsFlyerLib"],
+			publicHeadersPath: "Sources",
+			cSettings: [
+				.headerSearchPath("Sources")
+			]
+		),
 		.binaryTarget(name: "AppsFlyerLib", url: "https://github.com/AppsFlyerSDK/appsflyer-apple-sdk-qa/releases/download/6.3.0.4/AppsFlyerLib.xcframework.zip", checksum: "93ee34aa2acf502ad83d5d307eb098cd5698565437b776f40139a3bec77dd73e"),
         .testTarget(
             name: "AppsFlyerSegmentIntegrationTests",
