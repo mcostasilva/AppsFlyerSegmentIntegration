@@ -23,6 +23,7 @@ let package = Package(
         .target(
             name: "AppsFlyerSegmentIntegration",
 			dependencies: ["Segment", "AppsFlyerLib"],
+			sources: ["AppsFlyerSegmentIntegration"],
 			publicHeadersPath: "AppsFlyerSegmentIntegration",
 			cSettings: [
 				.headerSearchPath("AppsFlyerSegmentIntegration")
