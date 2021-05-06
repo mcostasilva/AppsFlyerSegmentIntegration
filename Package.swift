@@ -23,9 +23,9 @@ let package = Package(
         .target(
             name: "AppsFlyerSegmentIntegration",
 			dependencies: ["Segment", "AppsFlyerLib"],
-			publicHeadersPath: "Sources",
+			publicHeadersPath: "AppsFlyerSegmentIntegration",
 			cSettings: [
-				.headerSearchPath("Sources")
+				.headerSearchPath("AppsFlyerSegmentIntegration")
 			]
 		),
 		.binaryTarget(name: "AppsFlyerLib", url: "https://github.com/AppsFlyerSDK/appsflyer-apple-sdk-qa/releases/download/6.3.0.4/AppsFlyerLib.xcframework.zip", checksum: "93ee34aa2acf502ad83d5d307eb098cd5698565437b776f40139a3bec77dd73e"),
